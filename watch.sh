@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
 BASEDIR=$(dirname "$0")
-{$BASEDIR}/run waf watch
+${BASEDIR}/run waf watch

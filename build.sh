@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
 BASEDIR=$(dirname "$0")
-{$BASEDIR}/run waf build
+${BASEDIR}/run waf build
