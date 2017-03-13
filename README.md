@@ -9,6 +9,7 @@ Installation Instruction for Ubuntu
 * sudo apt-get install doxygen
 * sudo apt-get install python-virtualenv
 
+
 Using
 -----
 
@@ -18,3 +19,10 @@ Using
 4. ./setup.sh
 5. ./build.sh
 6. ./watch.sh
+
+
+Notes
+-----
+
+* if `splint` couldn't find "sys/types.h" see:
+  [where's my usr/include/sys directory][http://askubuntu.com/questions/414110/wheres-my-usr-include-sys-directory]
