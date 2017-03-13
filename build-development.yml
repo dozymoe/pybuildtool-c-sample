@@ -1,0 +1,44 @@
+src:
+    options:
+        doxygen_config_file: etc/doxygen.conf
+        cppcheck_work_dir: "{_1}/"
+        cppcheck_template: "[{file}:{line}] [{severity}:{id}] {message}"
+        roscpplint_work_dir: "{_1}/"
+        roscpplint_filter:
+            - -readability/casting
+            - -readability/multiline_comment
+            - -whitespace/comments
+        splint_work_dir: "{_1}/"
+
+
+    cppcheck:
+        raw_file_in:
+            - "{_1}/*.c"
+            - "{_1}/*.h"
+        token_out: "{_1}:{_2}"
+
+
+    roscpplint:
+        raw_file_in:
+            - "{_1}/*.c"
+            - "{_1}/*.h"
+        token_out: "{_1}:{_2}"
+
+
+    splint:
+        raw_file_in:
+            - "{_1}/*.c"
+            - "{_1}/*.h"
+        token_out: "{_1}:{_2}"
+
+
+    doxygen:
+        raw_depend_in: etc/doxygen.conf
+        raw_file_in:
+            - "{_1}/*.h"
+            - "{_1}/*.c"
+        token_in:
+            - "{_1}:cppcheck"
+            - "{_1}:roscpplint"
+            - "{_1}:splint"
+        token_out: "{_1}:{_2}"

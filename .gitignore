@@ -1,0 +1,9 @@
+## pybuildtool
+
+/.BUILD/
+/.lock-waf_*
+/.virtualenv/
+/python_modules
+/build.yml
+/requirements.txt
+/wscript

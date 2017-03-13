@@ -1,0 +1,29 @@
+{
+    "modules": [
+        "fireh_runner.modules.setup",
+        "fireh_runner.modules.pip",
+        "fireh_runner.modules.waf"
+    ],
+    "setup_modules": [
+        "fireh_runner.setup_modules.git",
+        "fireh_runner.setup_modules.python",
+        "fireh_runner.setup_modules.pybuildtool"
+    ],
+
+    "package_name": "pybuildtool_c_sample",
+    "default_project": "simple-c-shell",
+    "default_variant": "development",
+
+    "python_version": "2.7",
+    "virtualenv_dir": ".virtualenv",
+    "system_site_packages": true,
+    "waf_version": "1.9.8",
+
+    "configuration": {
+        "development": {
+            "simple-c-shell": {
+                "work_dir": "src/"
+            }
+        }
+    }
+}

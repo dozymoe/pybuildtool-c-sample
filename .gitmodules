@@ -1,0 +1,6 @@
+[submodule "src"]
+	path = src
+	url = https://github.com/jmreyes/simple-c-shell
+[submodule "fireh_runner"]
+	path = fireh_runner
+	url = https://github.com/dozymoe/fireh_runner
