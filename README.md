@@ -25,4 +25,4 @@ Notes
 -----
 
 * if `splint` couldn't find "sys/types.h" see:
-  [where's my usr/include/sys directory][http://askubuntu.com/questions/414110/wheres-my-usr-include-sys-directory]
+  [where's my usr/include/sys directory](http://askubuntu.com/questions/414110/wheres-my-usr-include-sys-directory)
