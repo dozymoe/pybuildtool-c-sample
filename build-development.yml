@@ -18,11 +18,11 @@ src:
         token_out: "{_1}:{_2}"
 
 
-    roscpplint:
-        raw_file_in:
-            - "{_1}/*.c"
-            - "{_1}/*.h"
-        token_out: "{_1}:{_2}"
+    #roscpplint:
+    #    raw_file_in:
+    #        - "{_1}/*.c"
+    #        - "{_1}/*.h"
+    #    token_out: "{_1}:{_2}"
 
 
     splint:
@@ -39,6 +39,6 @@ src:
             - "{_1}/*.c"
         token_in:
             - "{_1}:cppcheck"
-            - "{_1}:roscpplint"
+            #- "{_1}:roscpplint"
             - "{_1}:splint"
         token_out: "{_1}:{_2}"
